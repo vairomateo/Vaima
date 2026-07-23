@@ -1,0 +1,156 @@
+// ==========================================
+//  BY NTG — _dudas.scss
+// ==========================================
+
+// ── HERO ──────────────────────────────────
+.hero-dudas {
+  padding: 120px 0 80px;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 60px,
+      rgba(232, 197, 71, 0.03) 60px,
+      rgba(232, 197, 71, 0.03) 61px
+    );
+  }
+
+  h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 0.95;
+    color: var(--blanco);
+
+    span { color: var(--acento); }
+  }
+
+  p {
+    color: var(--texto-suave);
+    font-size: 1.05rem;
+    max-width: 500px;
+    margin: 1.2rem auto 0;
+  }
+}
+
+// ── FILTROS CATEGORÍA ─────────────────────
+.cat-btn {
+  background: var(--gris-med);
+  color: var(--texto-suave);
+  border: 1px solid var(--gris-brd);
+  border-radius: 50px;
+  padding: 0.45rem 1.2rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+
+  &:hover,
+  &.activo {
+    background: var(--acento);
+    color: var(--negro);
+    border-color: var(--acento);
+    font-weight: 600;
+  }
+}
+
+// ── BUSCADOR ──────────────────────────────
+.faq-search {
+  background: var(--gris-med);
+  color: var(--blanco);
+  border: 1px solid var(--gris-brd);
+  border-radius: var(--radius);
+  padding: 0.75rem 1.1rem;
+  font-size: 0.95rem;
+  width: 100%;
+  transition: border-color 0.25s;
+
+  &:focus {
+    outline: none;
+    border-color: var(--acento);
+  }
+
+  &::placeholder { color: var(--texto-suave); }
+}
+
+// ── GRUPOS FAQ ────────────────────────────
+.faq-grupo {
+  margin-bottom: 2.5rem;
+
+  &.oculto { display: none; }
+}
+
+.faq-grupo-titulo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  color: var(--acento);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  i { font-size: 1.1rem; }
+}
+
+// ── ACORDEÓN ──────────────────────────────
+.accordion-item {
+  background: var(--gris-osc) !important;
+  border: 1px solid var(--gris-brd) !important;
+  border-radius: var(--radius) !important;
+  margin-bottom: 0.6rem;
+  overflow: hidden;
+}
+
+.accordion-button {
+  background: var(--gris-osc) !important;
+  color: var(--blanco) !important;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 1.1rem 1.3rem;
+  box-shadow: none !important;
+
+  &:not(.collapsed) {
+    color: var(--acento) !important;
+    border-bottom: 1px solid var(--gris-brd);
+  }
+
+  &::after {
+    filter: invert(1) sepia(1) saturate(3) hue-rotate(5deg);
+  }
+}
+
+.accordion-body {
+  background: var(--gris-osc);
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  padding: 1rem 1.3rem 1.2rem;
+
+  strong { color: var(--blanco); }
+
+  a { color: var(--acento); }
+
+  ul {
+    padding-left: 1.2rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0;
+
+    li { margin-bottom: 0.3rem; }
+  }
+}
+
+// ── RESPONSIVE ────────────────────────────
+@media (max-width: 768px) {
+  .cats-scroll {
+    overflow-x: auto;
+    flex-wrap: nowrap !important;
+    padding-bottom: 0.5rem;
+  }
+  .cat-btn { flex-shrink: 0; }
+}

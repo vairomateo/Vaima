@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="imagenes/logo-byntg.png" type="image/png">
+  <meta name="description" content="By NTG — Trabajos realizados y marcas que usamos.">
+  <title>By NTG | Quiénes somos</title>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header>
+  <nav class="navbar navbar-expand-lg py-2 sticky-top">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand" href="index.html">
+        <img src="imagenes/logo-byntg.png" alt="By NTG">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3 mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link active" href="nosotros.html">Quiénes somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="dudas.html">Dudas</a></li>
+          <li class="nav-item mt-2 mt-lg-0">
+            <a class="btn-turno-nav nav-link" href="turnos.html">
+              <i class="bi bi-calendar-check me-1"></i>Sacar turno
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero-nosotros">
+  <div class="container position-relative">
+    <div class="hero-acento-line"></div>
+    <h1>NUESTROS <span>TRABAJOS</span></h1>
+    <p>Cada auto que sale del taller habla por nosotros. Acá van algunos ejemplos.</p>
+  </div>
+</section>
+
+<section class="nosotros-intro reveal-scroll">
+  <div class="contenedor-chico">
+    <span class="subtitulo-estetico">Nuestra Pasión</span>
+    <h2>Cómo nació By NTG</h2>
+    <p>
+      By NTG no nació como un lavadero más, sino de la obsesión pura por el detalle y el cuidado automotor. Lo que arrancó como un hobby los fines de semana, puliendo y protegiendo nuestros propios vehículos, se transformó en un taller profesional. 
+    </p>
+    <p>
+      Hoy nos dedicamos a devolverle a cada auto y moto ese brillo de salón que parecía perdido, usando productos premium y técnicas artesanales. No despachamos vehículos en serie: nos tomamos el tiempo que cada uno merece.
+    </p>
+  </div>
+</section>
+
+<section class="nosotros-ubicacion reveal-scroll">
+  <div class="contenedor-grid">
+    <div class="info-ubicacion">
+      <span class="subtitulo-estetico">Encontranos</span>
+      <h2>El Taller</h2>
+      <p class="direccion">
+        <i class="fas fa-map-marker-alt"></i> Quilmes, Buenos Aires
+      </p>
+      <p class="horarios">
+        <i class="fas fa-clock"></i> Lunes a Sábados — Coordinar turno previo
+      </p>
+      <a href="https://maps.app.goo.gl/vyutoLxS2z3fPMCy6" target="_blank" class="btn-mapa">
+        Ver en Google Maps <i class="fas fa-external-link-alt"></i>
+      </a>
+    </div>
+    
+    <div class="mapa-wrapper">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.8323260645193!2d-58.29714682451913!3d-34.7094088630871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33335e9dce017%3A0x6e5c3b9b9401d47a!2sBy%20ntg!5e0!3m2!1ses-419!2sar!4v1782750619085!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERÍA ===== -->
+<!-- === SECCIÓN NUESTROS TRABAJOS === -->
+<section class="seccion-trabajos reveal-scroll">
+  <div class="contenedor-galeria">
+    <span class="subtitulo-estetico">Galería</span>
+    <h2>Trabajos Realizados</h2>
+
+    <!-- Filtros de la Galería -->
+    <div class="filtros-galeria">
+      <button class="btn-filtro active" data-filter="todos">Todos</button>
+      <button class="btn-filtro" data-filter="tapizados">Tapizados</button>
+      <button class="btn-filtro" data-filter="opticas">Ópticas</button>
+      <button class="btn-filtro" data-filter="polarizados">Polarizados</button>
+    </div>
+
+    <!-- Grilla de Trabajos (7 Bloques Reales) -->
+    <div class="grilla-trabajos">
+
+      <!-- 1. ANTES Y DESPUÉS: Restauración de Ópticas -->
+      <div class="tarjeta-trabajo" data-category="opticas">
+        <div class="bloque-antes-despues">
+          <div class="foto-antes">
+            <img src="imagenes/optica-der-opaca-antes.jpeg" alt="Óptica opaca antes">
+            <span class="tag-foto antes">Antes</span>
+          </div>
+          <div class="foto-despues">
+            <img src="imagenes/ambas-opticas-perfectas-despues.jpeg" alt="Ópticas pulidas después">
+            <span class="tag-foto despues">Después</span>
+          </div>
+        </div>
+        <div class="info-trabajo">
+          <span class="badge-estetica">Estética</span>
+          <h3>Restauración de Ópticas</h3>
+          <p>Eliminación del tono amarillento y veteado, recuperando la transparencia y potencia original del haz de luz.</p>
+        </div>
+      </div>
+
+      <!-- 2. ANTES Y DESPUÉS: Limpieza de Butacas Delanteras -->
+      <div class="tarjeta-trabajo" data-category="tapizados">
+        <div class="bloque-antes-despues">
+          <div class="foto-antes">
+            <img src="imagenes/tapizado-delantero-sucio-antes.jpeg" alt="Tapizado delantero sucio antes">
+            <span class="tag-foto antes">Antes</span>
+          </div>
+          <div class="foto-despues">
+            <img src="imagenes/tapizado-delantero-limpo-depsues.jpeg" alt="Tapizado delantero limpio después">
+            <span class="tag-foto despues">Después</span>
+          </div>
+        </div>
+        <div class="info-trabajo">
+          <span class="badge-lavado">Lavado Premium</span>
+          <h3>Limpieza de Butacas Delanteras</h3>
+          <p>Inyección y extracción para eliminar manchas profundas, aureolas y suciedad acumulada en la tela.</p>
+        </div>
+      </div>
+
+      <!-- 3. ANTES Y DESPUÉS: Renovación de Plaza Trasera -->
+      <div class="tarjeta-trabajo" data-category="tapizados">
+        <div class="bloque-antes-despues">
+          <div class="foto-antes">
+            <img src="imagenes/tapizado-trasero-sucio-antes.jpeg" alt="Tapizado trasero sucio antes">
+            <span class="tag-foto antes">Antes</span>
+          </div>
+          <div class="foto-despues">
+            <img src="imagenes/tapizado-trasero-limpo-depsues.jpeg" alt="Tapizado trasero limpio después">
+            <span class="tag-foto despues">Después</span>
+          </div>
+        </div>
+        <div class="info-trabajo">
+          <span class="badge-lavado">Lavado Premium</span>
+          <h3>Renovación de Plaza Trasera</h3>
+          <p>Desatascado completo de tapizados y alfombras, eliminando olores y devolviendo el color original.</p>
+        </div>
+      </div>
+
+      <!-- 4. ANTES Y DESPUÉS: Polarizado Autito -->
+      <div class="tarjeta-trabajo" data-category="polarizados">
+        <div class="bloque-antes-despues">
+          <div class="foto-antes">
+            <img src="imagenes/polarizado-antes-autito.jpeg" alt="Proceso de polarizado">
+            <span class="tag-foto antes">Proceso</span>
+          </div>
+          <div class="foto-despues">
+            <img src="imagenes/polarizado-despues-autito.jpeg" alt="Polarizado terminado">
+            <span class="tag-foto despues">Terminado</span>
+          </div>
+        </div>
+        <div class="info-trabajo">
+          <span class="badge-polarizado">Polarizado</span>
+          <h3>Laminado de Control Solar</h3>
+          <p>Instalación de film premium para privacidad, reducción de calor interior y protección contra rayos UV.</p>
+        </div>
+      </div>
+
+      <!-- 5. RESULTADO FINAL: Detallado de Interior -->
+      <div class="tarjeta-trabajo" data-category="tapizados">
+        <div class="foto-unica">
+          <img src="imagenes/interior-lavado.jpeg" alt="Interior detallado By NTG">
+          <span class="tag-foto resultado">Resultado Final</span>
+        </div>
+        <div class="info-trabajo">
+          <span class="badge-detailing">Detailing</span>
+          <h3>Detallado de Interior Completo</h3>
+          <p>Acondicionamiento de torpedo, plásticos, pedaleras y colocación de protector de cortesía By NTG.</p>
+        </div>
+      </div>
+
+      <!-- 6. RESULTADO FINAL: Polarizado Hilux -->
+      <div class="tarjeta-trabajo" data-category="polarizados">
+        <div class="foto-unica">
+          <img src="imagenes/polarizado-hilux.jpeg" alt="Toyota Hilux Polarizada">
+          <span class="tag-foto resultado">Resultado Final</span>
+        </div>
+        <div class="info-trabajo">
+          <span class="badge-polarizado">Polarizado</span>
+          <h3>Polarizado Profesional Pick-Up</h3>
+          <p>Terminaciones perfectas sin burbujas en cristales laterales y luneta trasera de Toyota Hilux.</p>
+        </div>
+      </div>
+
+      <!-- 7. RESULTADO FINAL: Lavado de Interior -->
+      <!-- 7. RESULTADO FINAL: Lustrado con Máquina -->
+      <div class="tarjeta-trabajo" data-category="estetica">
+        <div class="foto-unica">
+          <img src="imagenes/detailing.jpeg" alt="Lustrado de carrocería con máquina">
+          <span class="tag-foto resultado">Resultado Final</span>
+        </div>
+        <div class="info-trabajo">
+          <span class="badge-abrillantado">Abrillantado</span>
+          <h3>Lustrado & Corrección de Pintura</h3>
+          <p>Eliminación de microrayones y marcas circulares con máquina rotativa, devolviendo el brillo espejo y la protección a la pintura.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose"><i class="bi bi-x-lg"></i></button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="bi bi-chevron-left"></i></button>
+  <div class="lightbox-content">
+    <img src="" alt="" id="lightboxImg">
+    <p class="lightbox-label" id="lightboxLabel"></p>
+  </div>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext"><i class="bi bi-chevron-right"></i></button>
+</div>
+
+<!-- ===== MARCAS ===== -->
+<section class="marcas-section">
+  <div class="container mb-4">
+    <h2>MARCAS QUE <span>USAMOS</span></h2>
+    <div class="marcas-separador"></div>
+  </div>
+  <div class="track-wrapper">
+    <div class="marca-track">
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>3M</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Llumar</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Solar Gard</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Gyeon</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Meguiar's</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Sonax</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Koch Chemie</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Ceramic Pro</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Rupes</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Autoglym</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Adam's</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>CarPro</span>
+      <!-- Segunda copia para el loop -->
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>3M</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Llumar</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Solar Gard</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Gyeon</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Meguiar's</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Sonax</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Koch Chemie</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Ceramic Pro</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Rupes</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Autoglym</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>Adam's</span>
+      <span class="marca-chip"><i class="bi bi-circle-fill" style="font-size:.5rem"></i>CarPro</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="py-5 px-3">
+  <div class="container">
+    <div class="cta-turno">
+      <h3>¿QUERÉS <span>EL MISMO RESULTADO?</span></h3>
+      <p>Sacá tu turno y en menos de 24 hs te contactamos para coordinar.</p>
+      <a href="turnos.html" class="btn-cta">
+        <i class="bi bi-calendar-check me-2"></i>Reservar turno
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="imagenes/logo-byntg.png" alt="By NTG" style="height:48px; margin-bottom:1rem;">
+        <p class="footer-copy" style="font-size:.88rem;">Estética automotriz profesional en Buenos Aires.</p>
+        <p class="footer-copy mt-1">© 2025 By NTG</p>
+      </div>
+      <div class="col-md-4">
+        <p class="footer-titulo">NAVEGACIÓN</p>
+        <a href="index.html"    class="footer-link">Servicios</a>
+        <a href="nosotros.html" class="footer-link">Quiénes somos</a>
+        <a href="dudas.html"    class="footer-link">Dudas frecuentes</a>
+        <a href="turnos.html"   class="footer-link">Sacar turno</a>
+      </div>
+      <div class="col-md-4">
+        <p class="footer-titulo">CONTACTO</p>
+        <a href="https://wa.me/1135706315" class="footer-link" target="_blank">
+          <i class="bi bi-whatsapp me-2"></i>1135706315
+        </a>
+        <a href="https://www.instagram.com/by__ntg?igsh=MWk4cTJ5bm9mM2hoMQ==" class="footer-link" target="_blank">
+          <i class="bi bi-instagram me-2"></i>@by__ntg
+        </a>
+        <a href="#" class="footer-link">
+          <i class="bi bi-geo-alt-fill me-2"></i>Buenos Aires, Argentina
+        </a>
+      </div>
+    </div>
+    <div class="border-top mt-4 pt-3" style="border-color:var(--gris-brd) !important;">
+      <p class="footer-copy text-center mb-0">Diseño y Desarrollo — By NTG</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/nosotros.js"></script>
+</body>
+</html>
